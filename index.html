@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <aside class="sidebar">
+        <a class="sidebar__inner-link" href="#">
+          <div class="sidebar__inner">
+            <img src="./assets/img/logo.svg" alt="Logo Dashboard" />
+            <div class="sidebar__inner-text">
+              <h1 class="sidebar__inner-title">Dashboard</h1>
+              <span class="sidebar__logo-version"> v.01 </span>
+            </div>
+          </div>
+        </a>
+
+        <nav class="sidebar__menu">
+          <ul class="sidebar__menu-list">
+            <li class="menu__item">
+              <a class="menu__item-link" href="#">
+                <img
+                  src="./assets/img/aside/dashboard.svg"
+                  alt="Dashboard"
+                  class="menu__item-img"
+                />
+                <p class="menu__item-title">Dashboard</p>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#">
+                <img
+                  src="./assets/img/aside/product.svg"
+                  alt="Product"
+                  class="menu__item-img"
+                />
+                <p class="menu__item-title">Product</p>
+                <img
+                  class="menu__item-arrow"
+                  src="./assets/img/aside/arrow.svg"
+                  alt="Arrow"
+                />
+              </a>
+            </li>
+            <li class="menu__item menu__item--active">
+              <a class="menu__item-link" href="#">
+                <img
+                  src="./assets/img/aside/customers.svg"
+                  alt="Customers"
+                  class="menu__item-img"
+                />
+                <p class="menu__item-title">Customers</p>
+                <svg
+                  width="6.004120"
+                  height="10.008179"
+                  viewBox="0 0 6.00412 10.0082"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <desc>Created with Pixso.</desc>
+                  <defs />
+                  <path
+                    id="Vector"
+                    d="M1 9L5 5L1 1"
+                    stroke="#fff"
+                    stroke-opacity="1.000000"
+                    stroke-width="2.000000"
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#">
+                <img
+                  src="./assets/img/aside/income.svg"
+                  alt="Income"
+                  class="menu__item-img"
+                />
+                <p class="menu__item-title">Income</p>
+                <img
+                  class="menu__item-arrow"
+                  src="./assets/img/aside/arrow.svg"
+                  alt="Arrow"
+                />
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#">
+                <img
+                  src="./assets/img/aside/promote.svg"
+                  alt="Promote"
+                  class="menu__item-img"
+                />
+                <p class="menu__item-title">Promote</p>
+                <img
+                  class="menu__item-arrow"
+                  src="./assets/img/aside/arrow.svg"
+                  alt="Arrow"
+                />
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#">
+                <img
+                  src="./assets/img/aside/help.svg"
+                  alt="Help"
+                  class="menu__item-img"
+                />
+                <p class="menu__item-title">Help</p>
+                <img
+                  class="menu__item-arrow"
+                  src="./assets/img/aside/arrow.svg"
+                  alt="Arrow"
+                />
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="sidebar__footer">
+          <div class="sidebar__footer-user">
+            <img
+              class="sidebar__footer-img"
+              src="./assets/img/aside/logo-footer.png"
+              alt="User"
+            />
+            <div class="sidebar__footer-descr">
+              <p class="sidebar__footer-name">Evano</p>
+              <p class="sidebar__footer-title">Project Manager</p>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main">
+        <section class="main__section">
+          <div class="container">
+            <div class="main__info">
+              <div class="main__title">
+                <button class="menu__btn">
+                  <span></span><span></span><span></span>
+                </button>
+                <h2 class="main__title-text">Hello Evano 👋🏼,</h2>
+              </div>
+              <div class="main__inner">
+                <div class="main__header">
+                  <div class="main__header-info">
+                    <h3 class="main__header-title">All Customers</h3>
+                    <p class="main__header-text">Active Members</p>
+                  </div>
+                  <div class="main__header-block">
+                    <input
+                      class="main__header-search"
+                      placeholder="Search"
+                      type="text"
+                    />
+                  </div>
+                </div>
+
+                <div class="table-container">
+                  <div class="main__inner-table">
+                    <div class="table__row table__row-descr">
+                      <div class="table__header">Customer Name</div>
+                      <div class="table__header">Company</div>
+                      <div class="table__header">Phone Number</div>
+                      <div class="table__header">Email</div>
+                      <div class="table__header">Country</div>
+                      <div class="table__header status">Status</div>
+                    </div>
+
+                    <div class="table__row">
+                      <div class="table__item">Jane Cooper</div>
+                      <div class="table__item">Microsoft</div>
+                      <div class="table__item">(225) 555-0118</div>
+                      <div class="table__item">jane@microsoft.com</div>
+                      <div class="table__item">United States</div>
+                      <div class="table__item">
+                        <p class="active">Active</p>
+                      </div>
+                    </div>
+
+                    <div class="table__row">
+                      <div class="table__item">Floyd Miles</div>
+                      <div class="table__item">Yahoo</div>
+                      <div class="table__item">(205) 555-0100</div>
+                      <div class="table__item">floyd@yahoo.com</div>
+                      <div class="table__item">Kiribati</div>
+                      <div class="table__item">
+                        <p class="inactive">Inactive</p>
+                      </div>
+                    </div>
+
+                    <div class="table__row">
+                      <div class="table__item">Ronald Richards</div>
+                      <div class="table__item">Adobe</div>
+                      <div class="table__item">(302) 555-0107</div>
+                      <div class="table__item">ronald@adobe.com</div>
+                      <div class="table__item">Israel</div>
+                      <div class="table__item">
+                        <p class="inactive">Inactive</p>
+                      </div>
+                    </div>
+
+                    <div class="table__row">
+                      <div class="table__item">Marvin McKinney</div>
+                      <div class="table__item">Tesla</div>
+                      <div class="table__item">(252) 555-0126</div>
+                      <div class="table__item">marvin@tesla.com</div>
+                      <div class="table__item">Iran</div>
+                      <div class="table__item">
+                        <p class="active">Active</p>
+                      </div>
+                    </div>
+
+                    <div class="table__row">
+                      <div class="table__item">Jerome Bell</div>
+                      <div class="table__item">Google</div>
+                      <div class="table__item">(629) 555-0129</div>
+                      <div class="table__item">jerome@google.com</div>
+                      <div class="table__item">Réunion</div>
+                      <div class="table__item">
+                        <p class="active">Active</p>
+                      </div>
+                    </div>
+
+                    <div class="table__row">
+                      <div class="table__item">Kathryn Murphy</div>
+                      <div class="table__item">Microsoft</div>
+                      <div class="table__item">(406) 555-0120</div>
+                      <div class="table__item">kathryn@microsoft.com</div>
+                      <div class="table__item">Curaçao</div>
+                      <div class="table__item">
+                        <p class="active">Active</p>
+                      </div>
+                    </div>
+
+                    <div class="table__row">
+                      <div class="table__item">Jacob Jones</div>
+                      <div class="table__item">Yahoo</div>
+                      <div class="table__item">(208) 555-0112</div>
+                      <div class="table__item">jacob@yahoo.com</div>
+                      <div class="table__item">Brazil</div>
+                      <div class="table__item">
+                        <p class="active">Active</p>
+                      </div>
+                    </div>
+
+                    <div class="table__row">
+                      <div class="table__item">Kristin Watson</div>
+                      <div class="table__item">Facebook</div>
+                      <div class="table__item">(704) 555-0127</div>
+                      <div class="table__item">kristin@facebook.com</div>
+                      <div class="table__item">Åland Islands</div>
+                      <div class="table__item">
+                        <p class="inactive">Inactive</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="main__inner-footer">
+                  <div class="main__inner-footer--info">
+                    <p class="main__inner-footer--text">
+                      Showing data 1 to 8 of 256K entries
+                    </p>
+                  </div>
+                  <div class="main__inner-footer--pagination">
+                    <div class="pagination">
+                      <button class="pagination__button"><</button>
+
+                      <button class="pagination__button button--active">
+                        1
+                      </button>
+                      <button class="pagination__button">2</button>
+                      <button class="pagination__button">3</button>
+                      <button class="pagination__button">4</button>
+                      <p>...</p>
+                      <button class="pagination__button">40</button>
+
+                      <button class="pagination__button">></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+  <script src="./js/script.js"></script>
+</html>
